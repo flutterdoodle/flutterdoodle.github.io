@@ -1,0 +1,41 @@
+# ==================
+# Environment
+# ==================
+environment: development
+
+# ==================
+# Base
+# ==================
+title: Janice Liu
+description: Janice Liu is a Canadian children's illustrator and teaching artist, Vancouver BC.
+safe: true
+exclude:
+  - "node_modules"
+  - "package.json"
+  - "gulpfile.js"
+  - "Gemfile"
+  - "Gemfile.lock"
+  
+
+# collections:
+#     projects:
+#         output: true
+#     posts:
+#         output: true
+#         permalink: /blog/:title/
+
+
+imgurl: 
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+#   -
+#     scope:
+#       type: "projects" 
+#     values:
+#       layout: "projects" 
+#       body: "projects"
