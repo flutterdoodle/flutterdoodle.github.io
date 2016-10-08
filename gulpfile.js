@@ -11,10 +11,12 @@ var autoprefixer = require('autoprefixer');
 var imagemin = require('gulp-imagemin');
 var lost = require('lost');
 var cssnano = require('gulp-cssnano');
+var sassGlob = require('gulp-sass-glob');
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp._src('_src/scss/*.scss')
+    return gulp.src('_src/scss/*.scss')
+        .pipe(sassGlob())
         .pipe(sass())
         .pipe(cssnano())
         .pipe(postcss([
@@ -27,7 +29,7 @@ gulp.task('sass', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp._src('_src/js/*.js')
+    return gulp.src('_src/js/*.js')
         .pipe(concat('all.js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify({preserveComments: 'all'}))
@@ -37,7 +39,7 @@ gulp.task('scripts', function() {
 
 //Optimize images
 gulp.task('img', function() {
-    return gulp._src('_src/img/*')
+    return gulp.src('_src/img/*')
         .pipe(imagemin({
             progressive: true,
             optimizationLevel: 4
