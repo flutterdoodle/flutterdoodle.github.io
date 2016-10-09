@@ -1,0 +1,40 @@
+.illustration__grid {
+  lost-flex-container: row;
+}
+
+.illustration__meta {
+  margin-bottom: 3rem;
+}
+
+.illustration__grid-item {
+  width: 100%;
+}
+
+.illustration__img {
+  width: 100%;
+}
+
+.illustration__divider {
+  display: block;
+  margin: 3rem auto;
+}
+
+
+@media (min-width: 48em){
+  
+  .illustration__grid-item {
+    lost-column: 1/2;
+  }
+
+  .illustration__meta {
+    margin: 1rem;
+  }  
+}
+
+@media (min-width: 62em){
+  
+  .illustration__grid-item {
+    lost-column: 1/3;
+  }
+  
+}

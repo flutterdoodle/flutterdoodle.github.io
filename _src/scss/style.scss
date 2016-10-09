@@ -1,7 +1,9 @@
 @import 'lib/normalize';
+@import 'lib/lightbox';
 
 @import 'base/variables';
 @import 'base/globals';
 @import 'base/containers';
+@import 'base/typography';
 
 @import 'components/**/*.scss';

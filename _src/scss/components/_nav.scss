@@ -1,5 +1,6 @@
 .nav {
   margin-top: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
   line-height: 1;
   
@@ -30,6 +31,7 @@
   font-family: $accent-font-stack;
   padding: 0.5rem;
   color: $orange;
+  font-weight: 400;
   text-decoration: none;
   
   &:hover, &:active, &:focus {
