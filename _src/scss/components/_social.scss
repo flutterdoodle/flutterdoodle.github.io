@@ -1,0 +1,35 @@
+.social {
+  display: none;
+  
+  @media (min-width: 48em){
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.social__link {
+  display: block;
+  font-size: 2.5rem;
+  height: 2.5rem;
+  
+  &--facebook {
+    color: #4460a0;
+  }
+  
+  &--tumblr {
+    color: #34455d;
+  }
+  
+  &--instagram {
+    color: #e1306c;
+  }
+  
+  &--behance {
+    color: #1769ff;
+  }
+}
