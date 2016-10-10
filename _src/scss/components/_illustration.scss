@@ -12,10 +12,7 @@
 .illustration__grid-item {
   overflow: hidden;
   width: 100%;
-  
-  &:first-child {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
 }
 
 .illustration__grid-link {
@@ -47,10 +44,6 @@
     lost-column: 1/2;
     //hack: magic number to account for 2px wide border
     margin-bottom: 1.75rem;
-  
-    &:first-child {
-      margin-bottom: 1.75rem;
-    }
   }
 
   .illustration__meta {
@@ -58,7 +51,11 @@
   }  
   
   .illustration__divider {
-    margin: 3rem auto 5rem;
+    margin: 5rem auto;
+    
+    .illustration__grid + & {
+      margin: 3rem auto 5rem;
+    }
   }
 }
 
