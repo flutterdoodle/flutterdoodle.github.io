@@ -30,7 +30,7 @@
   display: inline-block;
   font-family: $accent-font-stack;
   padding: 0.5rem;
-  color: $orange;
+  color: $red;
   font-weight: 400;
   text-decoration: none;
   
@@ -41,7 +41,7 @@
 }
 
 .nav__sublink {
-  color: $red;
+  color: $green;
 }
 
 @media (min-width: 48em){
@@ -52,7 +52,7 @@
   }
   
   .nav__upper {
-    border-bottom: 2px solid $light-orange;
+    border-bottom: 2px solid $light-pink;
   }
     
   .nav__logo {

@@ -5,8 +5,8 @@
 .illustration__meta {
   padding: 1rem;
   height: 100%;
-  background: #fff;
-  border: 2px solid $light-orange;
+  background-color: lighten($light-pink, 2%);
+  background-image: url("/img/site/fresh-snow.png");
 }
 
 .illustration__grid-item {
