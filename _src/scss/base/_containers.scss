@@ -1,3 +1,9 @@
+main {
+  @media (min-width: 72em){
+    padding: 0 3rem;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
   width: 90%;

@@ -6,9 +6,9 @@ body: illustrations
 <main>
   {% for series in page.series %}
     <section class="illustration__grid">
-      <div class="illustration__grid-item">
+      <div class="illustration__grid-item {% if series.thirds %}illustration__grid-item--thirds {% endif %}">
         <div class="illustration__meta">
-          <img src="{{ series.titleImg }}" alt="{{ series.title }}">
+          <h1>{{ series.title }}</h1>
           <p>
             {{ series.description }}
           </p>
@@ -16,7 +16,7 @@ body: illustrations
       </div>
       
       {% for img in series.images %}
-        <div class="illustration__grid-item">
+        <div class="illustration__grid-item {% if series.thirds %}illustration__grid-item--thirds {% endif %}">
           <a class="illustraton__grid-link" data-lightbox="illustration" href="{{ imgUrl }}{{ img.full }}" data-title="{{ img.desc }}">
             <img class="illustration__img" src="{{ imgUrl }}{% if img.thumb != null %}{{ img.thumb }}{% else %}{{ img.full }}{% endif %}" alt="{{ img.desc }}">
           </a>

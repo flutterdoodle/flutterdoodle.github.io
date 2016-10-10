@@ -3,11 +3,17 @@
 }
 
 .illustration__meta {
-  margin-bottom: 3rem;
+  margin: 1rem;
 }
 
 .illustration__grid-item {
   width: 100%;
+  
+  &:first-child {
+    background: #fff;
+    border: 2px solid $light-orange;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .illustration__img {
@@ -24,16 +30,25 @@
   
   .illustration__grid-item {
     lost-column: 1/2;
+    margin-bottom: 2rem;
+  
+    &:first-child {
+      margin-bottom: 2rem;
+    }
   }
 
   .illustration__meta {
-    margin: 1rem;
+    margin: 2rem;
   }  
+  
+  .illustration__divider {
+    margin: 3rem auto 5rem;
+  }
 }
 
 @media (min-width: 62em){
   
-  .illustration__grid-item {
+  .illustration__grid-item--thirds {
     lost-column: 1/3;
   }
   

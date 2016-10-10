@@ -32,4 +32,8 @@
   &--behance {
     color: #1769ff;
   }
+  
+  &:hover, &:active, &:focus {
+    color: $green;
+  }
 }
