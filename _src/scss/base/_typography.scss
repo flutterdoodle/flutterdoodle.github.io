@@ -10,19 +10,18 @@ a {
 }
 
 p {
-  margin: 0;
-  
-  & + p {
-    margin-top: 1rem;
-  }
+  margin: 1rem 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $accent-font-stack;
   font-weight: 400;
-  color: $blue;
   
   &:first-child {
-    margin-top: 1rem;
+    margin-top: 0;
   }
+}
+
+h1 {
+  color: $blue;
 }
