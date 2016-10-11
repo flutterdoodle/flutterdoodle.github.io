@@ -47,7 +47,6 @@
 @media (min-width: 48em){
   
   .nav {
-    margin-top: 3rem;  
     text-align: left;
   }
   
@@ -56,8 +55,20 @@
   }
     
   .nav__logo {
-    margin: 1rem 1rem 0 1rem;
+    margin: 2rem 1rem 1.5rem;
     max-width: 18rem;
+  }
+  
+  .nav__logo-link {
+    display: block;
+    position: relative;
+    
+    &::after {
+      content: url('/img/site/cloud.png');
+      position: absolute;
+      left: 4rem;
+      bottom: -1rem;
+    }
   }
   
   .nav__links {
@@ -75,6 +86,7 @@
     &::after {
       position: absolute;
       opacity: 0;
+      background-size: 70%;
     }
     
     &:hover, &:active, &:focus {
