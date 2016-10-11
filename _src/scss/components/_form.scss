@@ -1,0 +1,39 @@
+.form {
+  margin-top: 3rem;
+}
+
+.form__label {
+  display: block;
+  font-family: $accent-font-stack;
+  color: $red;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid $light-pink;
+  border-radius: 0.25rem;
+  font-family: $base-font-stack;
+  transition: all 0.3s ease;
+  
+  &:focus {
+    outline: none;
+    border-color: $blue;
+  }
+}
+
+.form__button {
+  background: $green;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+  font-family: $accent-font-stack;
+  transition: all 0.3s ease;
+  
+  &:hover, &:active, &:focus {
+    background: $blue;
+  }
+}

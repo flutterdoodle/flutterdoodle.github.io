@@ -1,0 +1,20 @@
+.contact__content {
+  padding-top: 3rem;
+}
+
+@media (min-width: 42em){
+  
+  .contact__row {
+    lost-flex-container: row
+  }
+
+  .contact__col {
+    lost-column: 1/2
+  }
+  
+  .contact__content {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  
+}
