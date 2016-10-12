@@ -1,8 +1,11 @@
 .footer {
   margin-top: 3rem;
+  margin-bottom: 1rem;
   border-top: 2px solid $light-pink;
   padding-top: 1.5rem;
   text-align: center;
+  font-size: 0.875rem;
+  color: #777;
 }
 
 .footer__links {
@@ -16,7 +19,7 @@
 
 .footer__link {
   padding: 0 0.25rem;
-  color: $dark-grey;
+  color: #777;
   font-weight: 300;
   text-transform: lowercase;
 }
