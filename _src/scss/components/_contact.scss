@@ -1,18 +1,18 @@
-.contact__content {
+.grid__content {
   padding-top: 3rem;
 }
 
-@media (min-width: 42em){
+@media (min-width: 48em){
   
-  .contact__row {
+  .grid__row {
     lost-flex-container: row
   }
 
-  .contact__col {
+  .grid__col {
     lost-column: 1/2
   }
   
-  .contact__content {
+  .grid__content {
     max-width: 30rem;
     margin: 0 auto;
   }
