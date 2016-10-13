@@ -1,0 +1,26 @@
+# ==================
+# Environment
+# ==================
+environment: production
+
+# ==================
+# Base
+# ==================
+title: Janice Liu Illustration
+description: Janice Liu (flutterdoodle) is a freelance children's illustrator and comic artist in Vancouver, Canada.
+safe: true
+exclude:
+  - "node_modules"
+  - "package.json"
+  - "gulpfile.js"
+  - "Gemfile"
+  - "Gemfile.lock"
+  
+imgurl: 
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
