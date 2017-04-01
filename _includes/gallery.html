@@ -1,13 +1,15 @@
 {% for series in page.series %}
   <section class="illustration__grid">
-    <div class="illustration__grid-item {% if series.thirds %}illustration__grid-item--thirds {% endif %}">
-      <div class="illustration__meta">
-        <h1>{{ series.title }}</h1>
-        <p>
-          {{ series.description }}
-        </p>
+    {% if series.showInformation %} 
+      <div class="illustration__grid-item {% if series.thirds %}illustration__grid-item--thirds {% endif %}">
+        <div class="illustration__meta">
+          <h1>{{ series.title }}</h1>
+          <p>
+            {{ series.description }}
+          </p>
+        </div>
       </div>
-    </div>
+    {% endif %}
     
     {% for img in series.images %}
       <div class="illustration__grid-item {% if series.thirds %}illustration__grid-item--thirds {% endif %}">
