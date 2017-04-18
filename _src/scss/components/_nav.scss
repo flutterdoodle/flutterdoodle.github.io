@@ -34,7 +34,7 @@
   font-weight: 400;
   text-decoration: none;
   
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &--active {
     color: $blue;
     outline: none;
   }
@@ -89,7 +89,7 @@
       background-size: 70%;
     }
     
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &--active {
       &::after {
         opacity: 1;
       }
