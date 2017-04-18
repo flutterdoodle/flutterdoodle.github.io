@@ -16,6 +16,9 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
   
+gems:
+  - jekyll-redirect-from  
+  
 imgurl: 
 
 defaults:
