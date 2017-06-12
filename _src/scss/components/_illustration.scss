@@ -15,16 +15,6 @@
   margin-bottom: 1rem;
 }
 
-.illustration__grid-link {
-  &:hover, &:active, &:focus {
-  
-    .illustration__img {
-      transform: scale(1.1);
-    }
-    
-  }
-}
-
 .illustration__img {
   width: 100%;
   height: 100%;

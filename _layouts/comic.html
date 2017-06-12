@@ -1,0 +1,12 @@
+{% include head.html %}
+<body class="{{ page.body }}">
+  <div class="wrapper">
+    <main>
+      {% for img in page.images %}
+        <img class="comic" src="{{ imgUrl }}{{ img.full }}" alt="{{ img.desc }}">
+      {% endfor %}
+    </main>
+    {% include footer.html %}
+  </div>
+  <script src="/js/all.min.js"></script>
+</body>

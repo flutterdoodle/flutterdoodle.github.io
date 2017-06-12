@@ -1,0 +1,27 @@
+---
+layout: default
+body: gallery
+---
+<main>
+  {% for series in page.series %}
+    <section class="illustration__grid">
+      {% if series.showInformation %} 
+        <div class="illustration__grid-item {% if series.thirds %}illustration__grid-item--thirds {% endif %}">
+          <div class="illustration__meta">
+            <h1>{{ series.title }}</h1>
+            <p>
+              {{ series.description }}
+            </p>
+          </div>
+        </div>
+      {% endif %}
+      
+      <div class="illustration__grid-item">
+        <a class="illustration__grid-link" href="{{ series.link }}">
+          <img class="illustration__img" src="{{ imgUrl }}{{ series.image }}" alt="{{ series.title }}">
+        </a>  
+      </div>
+    </section>
+    
+  {% endfor %}
+</main>
