@@ -12,7 +12,7 @@ body: gallery
   {% for series in page.series %}
     <section class="illustration__grid">
       {% if series.showInformation %} 
-        <div class="illustration__grid-item {% if series.thirds %}illustration__grid-item--thirds {% endif %}">
+        <div class="illustration__grid-item {% if series.thirds == true %}illustration__grid-item--thirds {% endif %}">
           <div class="illustration__meta">
             <h1>{{ series.title }}</h1>
             <p>
