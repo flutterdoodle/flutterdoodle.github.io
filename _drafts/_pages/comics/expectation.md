@@ -2,7 +2,7 @@
 layout: ''
 title: Expectation
 date: 2017-12-14 03:31:55 +0000
-permalink: "/comics/expecation"
+permalink: "/comics/expectation"
 images:
 - full: "/uploads/2017/12/13/expectation-cover.png"
   desc: The banner
