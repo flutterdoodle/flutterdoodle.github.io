@@ -1,3 +1,6 @@
 ---
 hide_body: false
-fields: []
+fields:
+- type: text
+  label: permalink
+  name: permalink
