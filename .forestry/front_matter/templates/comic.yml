@@ -4,6 +4,10 @@ pages:
 hide_body: false
 fields:
 - type: text
+  name: layout
+  label: layout
+  default: comic
+- type: text
   label: permalink
   name: permalink
 - type: text
