@@ -4,3 +4,17 @@ fields:
 - type: text
   label: permalink
   name: permalink
+- type: text
+  label: title
+  name: title
+- type: field_group_list
+  name: images
+  label: images
+  fields:
+  - type: file
+    name: full
+    label: full
+  - type: text
+    name: desc
+    label: Description
+    description: Alt text for the image for screen readers
