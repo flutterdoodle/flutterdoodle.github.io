@@ -1,6 +1,6 @@
 ---
 title: Lunar New Year illustrations
-layout: comic
+layout: Default
 date: 2018-02-16 05:00:44 +0000
 images:
 - full: "/uploads/2018/02/15/yearofthedog-s.png"
