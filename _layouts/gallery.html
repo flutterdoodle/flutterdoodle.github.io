@@ -24,7 +24,7 @@ body: gallery
       
       {% for img in series.images %}
         <div class="illustration__grid-item {% if series.thirds == true %}illustration__grid-item--thirds {% endif %}">
-          <a class="illustration__grid-link" {% if img.pageURL %}href="{{ img.pageUrl }}" {% else %}data-lightbox="illustration" href="{{ imgUrl }}{{ img.full }}" data-title="{{ img.desc }}" {% endif %}>
+          <a class="illustration__grid-link" {% if img.pageUrl %}href="{{ img.pageUrl }}" {% else %}data-lightbox="illustration" href="{{ imgUrl }}{{ img.full }}" data-title="{{ img.desc }}" {% endif %}>
             <img class="illustration__img" src="{{ imgUrl }}{% if img.thumb != null %}{{ img.thumb }}{% else %}{{ img.full }}{% endif %}" alt="{{ img.desc }}">
           </a>  
         </div>
