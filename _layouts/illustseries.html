@@ -1,20 +1,15 @@
 ---
 layout: default
-body: grid
+body: illustseries
 ---
 <main>
-  <div class="grid__row">
-    <div class="grid__col">
-      <main>
-      {% for img in page.images %}
-        <img class="img--center" src="{{ imgUrl }}{{ img.full }}" alt="{{ img.desc }}">
-      {% endfor %}
-    </main>
-    </div>
-    <div class="grid__col">
-      <div class="grid__content">
-        {{ content }}
-      </div>
-    </div>
-  </div>
+  {% assign content = content | strip_newlines %}
+  {% if content != '' %}
+    <section class='text-block'>
+      {{ content }}
+    </section>
+  {% endif %} 
+  {% for img in page.images %}
+    <img class="comic" src="{{ imgUrl }}{{ img.full }}" alt="{{ img.desc }}">
+  {% endfor %}
 </main>
