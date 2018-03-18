@@ -1,14 +1,20 @@
-{% include head.html %}
-<body class="{{ page.body }}">
-  <div class="wrapper">
-    {% include nav.html %}
-    {% include social.html %}
-    <main>
+---
+layout: default
+body: grid
+---
+<main>
+  <div class="grid__row">
+    <div class="grid__col">
+      <main>
       {% for img in page.images %}
-        <img class="illust" src="{{ imgUrl }}{{ img.full }}" alt="{{ img.desc }}">
+        <img class="img--center" src="{{ imgUrl }}{{ img.full }}" alt="{{ img.desc }}">
       {% endfor %}
     </main>
-    {% include footer.html %}
+    </div>
+    <div class="grid__col">
+      <div class="grid__content">
+        {{ content }}
+      </div>
+    </div>
   </div>
-  <script src="/js/all.min.js"></script>
-</body>
+</main>
