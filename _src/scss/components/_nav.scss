@@ -26,7 +26,7 @@
   max-width: 15rem;
 }
 
-.nav__link, .nav__sublink {
+.nav__link, .nav__sublink, .nav__contact {
   display: inline-block;
   font-family: $accent-font-stack;
   padding: 0.5rem;
@@ -45,7 +45,8 @@
 }
 
 .nav__contact {
-  color: $dark-grey;
+  color: $blue;
+  font-size: 1.125rem;
 }
 
 @media (min-width: 48em){
