@@ -44,16 +44,6 @@
   color: $green;
 }
 
-.nav__contact {
-  display: inline-block;
-  font-family: $accent-font-stack;
-  padding: 0.5rem;
-  color: $blue;
-  font-weight: 400;
-  text-decoration: none;
-  font-size: 1.125rem;
-}
-
 @media (min-width: 48em){
   
   .nav {
