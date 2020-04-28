@@ -2,13 +2,13 @@
   margin-top: 3rem;
 }
 
-.div.mc-field-group label {
+.#mc_embed_signup .mc-field-group label {
   display: block;
   font-family: $accent-font-stack;
   color: $red;
 }
 
-.div.mc-field-group input {
+.#mc_embed_signup .mc-field-group input {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
@@ -24,7 +24,7 @@
   }
 }
 
-.input.button {
+.#mc_embed_signup input.button {
   background: $green;
   color: white;
   border: none;
