@@ -1,0 +1,39 @@
+.#mc_embed_signup {
+  margin-top: 3rem;
+}
+
+.div.mc-field-group label {
+  display: block;
+  font-family: $accent-font-stack;
+  color: $red;
+}
+
+.div.mc-field-group input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid $light-pink;
+  border-radius: 0.25rem;
+  font-family: $base-font-stack;
+  transition: all 0.3s ease;
+  
+  &:focus {
+    outline: none;
+    border-color: $blue;
+  }
+}
+
+.input.button {
+  background: $green;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+  font-family: $accent-font-stack;
+  transition: all 0.3s ease;
+  
+  &:hover, &:active, &:focus {
+    background: $blue;
+  }
+}
